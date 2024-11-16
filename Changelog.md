@@ -3,8 +3,8 @@
 #### v1.0.5
 - Add support for macOS Sonoma and Sequoia.
 - Recompile the kext with the latest Lilu v1.7.0.
-- 
-- #### v1.0.4
+
+#### v1.0.4
 - Recompile the kext with the latest Lilu v1.6.2.
 
 #### v1.0.3
