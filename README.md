@@ -35,7 +35,7 @@ If you would like to support my work, please consider a donation.
 ## Boot Arguments
 - `-rtsfoff` (or `-liluoff`) to disable
 - `-rtsfdbg` (or `-liludbgall`) to enable verbose logging (in DEBUG builds)
-- `-rtsfbeta` (or `-lilubetaall`) to enable on macOS newer than 12
+- `-rtsfbeta` (or `-lilubetaall`) to enable on macOS newer than 15
 
 ## Credits
 - [vit9696](https://github.com/vit9696) for [Lilu.kext](https://github.com/vit9696/Lilu)
