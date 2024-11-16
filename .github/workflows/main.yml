@@ -17,8 +17,8 @@ jobs:
     env:
       JOB_TYPE: BUILD
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.2.2
+      - uses: actions/checkout@v4.2.2
         with:
           repository: acidanthera/MacKernelSDK
           path: MacKernelSDK
@@ -32,7 +32,7 @@ jobs:
       - run: xcodebuild -jobs 1 -configuration Release
 
       - name: Upload to Artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: Artifacts
           path: build/*/*.zip
