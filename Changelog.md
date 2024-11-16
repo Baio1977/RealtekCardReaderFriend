@@ -1,7 +1,8 @@
 #  Changelog
 
 #### v1.0.4
-- Recompile the kext with the latest Lilu v1.6.2.
+- Add support for macOS Sonoma and Sequoia.
+- Recompile the kext with the latest Lilu v1.6.9.
 
 #### v1.0.3
 - Add support for macOS Ventura.
