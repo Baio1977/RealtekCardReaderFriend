@@ -7,18 +7,21 @@ A Lilu plugin that makes System Information recognize your Realtek card reader a
 ![](Assets/Screenshot.png)
 
 ## Supported Systems
+- macOS Sequoia
+- macOS Sonoma
 - macOS Ventura
 - macOS Monterey
 - macOS Big Sur  
 - macOS Catalina  
 - macOS Mojave
-
+- macOS HighSierra
+  
 #### Notes:
 - Other systems are not tested yet.
 
 ## Dependencies
-- [Lilu](https://github.com/acidanthera/Lilu) v1.4.7 or later.
-- [RealtekCardReader](https://github.com/0xFireWolf/RealtekCardReader) v0.9.5 or later*.
+- [Lilu](https://github.com/acidanthera/Lilu) v1.7.0 or later.
+- [RealtekCardReader](https://github.com/0xFireWolf/RealtekCardReader) v0.9.8 or later*.
 
 #### Notes:
 - If your have a builtin USB card reader that works out of box but does not show up in System Information, you may try the other Lilu plugin [GenericCardReaderFriend](https://github.com/0xFireWolf/GenericCardReaderFriend). In other words, your card reader is powered by neither `AppleUSBCardReader.kext` nor `RealtekCardReader.kext`.
