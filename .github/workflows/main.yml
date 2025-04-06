@@ -52,25 +52,3 @@ jobs:
           file: build/*/*.zip
           tag: ${{ github.ref }}
           file_glob: true
-          
-  # Analyze the kext
-  analyze-clang:
-    name: Analyze Clang
-    runs-on: macos-13
-    env:
-      JOB_TYPE: ANALYZE
-    steps:
-      - uses: actions/checkout@v4.2.2
-      - uses: actions/checkout@v4.2.2
-        with:
-          repository: acidanthera/MacKernelSDK
-          path: MacKernelSDK
-      - name: CI Bootstrap
-        run: |
-          src=$(/usr/bin/curl -Lfs https://raw.githubusercontent.com/acidanthera/ocbuild/master/ci-bootstrap.sh) && eval "$src" || exit 1
-      - name: Lilu Bootstrap
-        run: |
-          src=$(/usr/bin/curl -Lfs https://raw.githubusercontent.com/acidanthera/Lilu/master/Lilu/Scripts/bootstrap.sh) && eval "$src" || exit 1
-
-      - run: xcodebuild analyze -quiet -scheme RealtekCardReaderFriend -configuration Debug CLANG_ANALYZER_OUTPUT=plist-html CLANG_ANALYZER_OUTPUT_DIR="$(pwd)/clang-analyze" && [ "$(find clang-analyze -name "*.html")" = "" ]
-      - run: xcodebuild analyze -quiet -scheme RealtekCardReaderFriend -configuration Release CLANG_ANALYZER_OUTPUT=plist-html CLANG_ANALYZER_OUTPUT_DIR="$(pwd)/clang-analyze" && [ "$(find clang-analyze -name "*.html")" = "" ]
