@@ -241,6 +241,6 @@ PluginConfiguration ADDPR(config) =
     bootargBeta,
     arrsize(bootargBeta),
     KernelVersion::HighSierra,
-    KernelVersion::Sequoia,
+    KernelVersion::Tahoe,
     start
 };
