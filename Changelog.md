@@ -1,9 +1,11 @@
 #  Changelog
-
+#### v1.0.6
+- Add support for macOS Tahoe.
+  
 #### v1.0.5
 - Recompile the kext with the latest Lilu v1.7.0.
 - Add support for macOS HighSierra - Sonoma - Sequoia.
-
+  
 #### v1.0.4
 - Recompile the kext with the latest Lilu v1.6.2.
 
