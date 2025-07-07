@@ -1,5 +1,6 @@
 #  Changelog
 #### v1.0.6
+- Recompile the kext with the latest Lilu v1.7.1.
 - Add support for macOS Tahoe.
   
 #### v1.0.5
