@@ -21,7 +21,7 @@ A Lilu plugin that makes System Information recognize your Realtek card reader a
 - Other systems are not tested yet.
 
 ## Dependencies
-- [Lilu](https://github.com/acidanthera/Lilu) v1.7.0 or later.
+- [Lilu](https://github.com/acidanthera/Lilu) v1.7.1 or later.
 - [RealtekCardReader](https://github.com/0xFireWolf/RealtekCardReader) v0.9.8 or later*.
 
 #### Notes:
