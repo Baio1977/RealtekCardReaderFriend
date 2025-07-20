@@ -1,4 +1,5 @@
 #  Realtek Card Reader Driver Friend
+[![CI-RealtekCardReaderFriend](https://github.com/Baio1977/RealtekCardReaderFriend/actions/workflows/main.yml/badge.svg)](https://github.com/Baio1977/RealtekCardReaderFriend/actions/workflows/main.yml)
 
 ## Introduction
 
