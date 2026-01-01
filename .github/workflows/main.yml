@@ -18,7 +18,7 @@ jobs:
   # Build the kext
   build:
     name: Build
-    runs-on: macos-13
+    runs-on: macos-latest
     env:
       JOB_TYPE: BUILD
     steps:
