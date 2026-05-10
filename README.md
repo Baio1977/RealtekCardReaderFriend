@@ -22,7 +22,7 @@ A Lilu plugin that makes System Information recognize your Realtek card reader a
 - Other systems are not tested yet.
 
 ## Dependencies
-- [Lilu](https://github.com/acidanthera/Lilu) v1.7.1 or later.
+- [Lilu](https://github.com/acidanthera/Lilu) v1.7.2 or later.
 - [RealtekCardReader](https://github.com/Baio1977/RealtekCardReader) v0.9.8 or later*.
 
 #### Notes:
@@ -37,7 +37,7 @@ If you would like to support my work, please consider a donation.
 ## Boot Arguments
 - `-rtsfoff` (or `-liluoff`) to disable
 - `-rtsfdbg` (or `-liludbgall`) to enable verbose logging (in DEBUG builds)
-- `-rtsfbeta` (or `-lilubetaall`) to enable on macOS newer than 12
+- `-rtsfbeta` (or `-lilubetaall`) to enable on unsupported / newer-than-declared macOS versions.
 
 ## Credits
 - [vit9696](https://github.com/vit9696) for [Lilu.kext](https://github.com/vit9696/Lilu)
