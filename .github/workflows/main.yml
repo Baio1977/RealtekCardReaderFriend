@@ -18,14 +18,14 @@ jobs:
   # Build the kext
   build:
     name: Build
-    runs-on: macos-latest
+    runs-on: macos-15-intel
     env:
       JOB_TYPE: BUILD
     steps:
      # Checkout the card reader repo
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v7
      # Checkout the MacKernelSDK repo
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v7
         with:
           repository: acidanthera/MacKernelSDK
           path: MacKernelSDK
@@ -40,13 +40,12 @@ jobs:
       - run: xcodebuild -jobs 1 -configuration Release
       # Upload the driver
       - name: Upload to Artifacts
-        uses: actions/upload-artifact@v7
+        uses: actions/upload-artifact@v7.0.1
         with:
           name: Artifacts
           path: build/*/*.zip
-      - name: Upload to Release
-        if: github.event_name == 'release'
-        uses: svenstaro/upload-release-action@v2
+      - name: Upload files to a GitHub release
+        uses: svenstaro/upload-release-action@2.11.5
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: build/*/*.zip
